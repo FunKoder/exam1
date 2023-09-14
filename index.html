@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exam</title>
+</head>
+<style type="text/css">
+	body{
+		margin: 0;
+		box-sizing: border-box;
+		background-image: linear-gradient(to top, #461220, #8C2F39 200%);
+	}
+	.top{
+		padding: 15px;
+		background-color: #B23A48;
+		overflow: hidden;
+		color: white;
+	}
+	.left{
+		float: left;
+		margin: 2px;
+	}
+	a{
+		float: right;
+		margin: 0 5px;
+		padding: 10px;
+		text-decoration: none;
+		color: white;
+		background-color: #8C2F39;
+		border-radius: 5px;
+	}
+	.row{
+		width: 100%;
+	}
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.col{
+		display: inline-block;
+		float: left;
+		margin-left: 11%;
+		padding: 15px;
+		text-align: center;
+	}
+	li{
+		float: left;
+	}
+	img{
+		height: 275px;
+		width: 275px;
+		border-radius: 5px;
+	}
+	iframe{
+		height: 275px;
+		width: 275px;
+		background-color: black;
+		border-radius: 5px;
+	}
+	button{
+		color: white;
+		background-color: #8C2F39;
+		padding: 12px;
+		text-decoration: none;
+		border-style: none;
+		border-radius: 5px;
+	}
+</style>
+<body>
+	<div class="top">
+		<h1 class="left">Lab Exam</h1>
+		<a href="index.html">Home</a>
+		<a href="web2.html">Events</a>
+	</div>
+
+	<div class="row">
+		<div class="col">
+			<img src="https://i.ebayimg.com/images/g/Ab0AAOSwnlRiMbt7/s-l1600.jpg" id="ci1"><br>
+			<button onclick="c1()">Upgrade</button>
+		</div>
+		<div class="col">
+			<img src="https://media.wired.com/photos/61aaab2e2962e4645e7fd38e/master/w_320,c_limit/Gear-Retro-Consoles-Polymega.jpg" id="ci2"><br>
+			<button onclick="c2()">Upgrade</button>
+		</div>
+		<div class="col">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQoU2lWNHoYTTBFZkyhFlDQQfDnBB0up1WZthhHjem99Uk79h9oyQFrLtDPaEArQi5Qno&usqp=CAU" id="ci3"><br>
+			<button onclick="c3()">Upgrade</button>
+		</div>
+			
+	</div>
+	
+
+	<div class="row">
+		<div class="col">
+			<iframe src="https://www.youtube.com/embed/Cu0thff8CrE" title="📣 Choco vs Strawberries What&#39;s your choice? / cafe vlog" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="vi1"></iframe><br>
+			<button onclick="v1()">Update</button>
+		</div>
+		<div class="col">
+			<iframe src="https://www.youtube.com/embed/NLPuCclm5lA" title="THE MOST SATISFYING FOOD VIDEO COMPILATION | SATISFYING AND TASTY FOOD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="vi2"></iframe><br>
+			<button onclick="v2()">Update</button>
+		</div>
+			
+		<div class="col">
+			<iframe src="https://www.youtube.com/embed/IOYYypTqojs" title="Oddly Satisfying Video With Calming Deep Sleep Music - Stress Relief &amp; Meditation #50" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="vi3"></iframe><br>
+			<button onclick="v3()">Update</button>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	function c1(){
+		document.getElementById('ci1').src = 'https://i.ebayimg.com/images/g/XcsAAOSwEKBkgZkw/s-l1200.jpg';
+	}
+	function c2(){
+		document.getElementById('ci2').src = 'https://d1rlzxa98cyc61.cloudfront.net/catalog/product/cache/1801c418208f9607a371e61f8d9184d9/1/7/173276_2020_1.jpg';
+	}
+	function c3(){
+		document.getElementById('ci3').src = 'https://www.pdevice.com/wp-content/uploads/2020/07/Lenovo-Legion-Pro-450x450.jpg';
+	}
+
+	function v1(){
+		document.getElementById('vi1').src = 'https://www.youtube.com/embed/cB8mvmeYYSU';
+	}
+	function v2(){
+		document.getElementById('vi2').src = 'https://www.youtube.com/embed/iu_myaxznA0';
+	}
+	function v3(){
+		document.getElementById('vi3').src = 'https://www.youtube.com/embed/ch8qtGvTrSY';
+	}
+</script>
+</html>
