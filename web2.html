@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events</title>
+</head>
+<style type="text/css">
+	.cont{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	body{
+		text-align: center;
+	}
+</style>
+<body>
+	<div class="cont">
+		<button onclick="clek()" ondblclick="clk()" onmouseover="over()">Click / Double Click / HoverOver me</button>
+	</div>
+
+	<p id="h"></p>
+	<p id="w"></p>
+	<input type="text" name="" value="Example" onblur="blur()" onchange="change()"id="h1">
+</body>
+<script type="text/javascript">
+	function clek() {
+  		document.getElementById("h").innerHTML = "Hello";
+}
+	function clk(){
+		document.getElementById("h").innerHTML = "World";
+	}
+	function over(){
+		document.getElementById("w").innerHTML = "Wooow";
+	}
+	function blur(){
+		let x = document.getElementById("h1");
+		x.value = x.value.toUpperCase();
+	}
+</script>
+</html>
